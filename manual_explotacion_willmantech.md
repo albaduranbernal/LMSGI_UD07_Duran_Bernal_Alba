@@ -27,6 +27,7 @@ DB_PASSWORD=Secure_Crypto_Pass_2026!
 DB_NAME=willmantech_prod
 ERP_PORT=8069
 
+------------------------------------------------------------------------------------------------------------------------------
 ### Procedimiento de Backup
 # 1. Clonar el repositorio de infraestructura e ingresar al directorio
 cd /opt/willmantech-erp
