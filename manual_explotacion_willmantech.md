@@ -29,22 +29,22 @@ ERP_PORT=8069
 
 -------------------------------------------------------------------------------------------------------------------------------
 ### Procedimiento de Backup
-# 1. Clonar el repositorio de infraestructura e ingresar al directorio
+## 1. Clonar el repositorio de infraestructura e ingresar al directorio
 cd /opt/willmantech-erp
 
-# 2. Construir e iniciar los microservicios en segundo plano (detached mode)
+## 2. Construir e iniciar los microservicios en segundo plano (detached mode)
 docker-compose up -d --build
 
-# 3. Verificar el correcto estado de ejecución de los contenedores
+## 3. Verificar el correcto estado de ejecución de los contenedores
 docker -compose ps
 
 -------------------------------------------------------------------------------------------------------------------------------
 ### Comando de Restauración 
 
-# 1. Limpieza y recreación de la base de datos destino
+## 1. Limpieza y recreación de la base de datos destino
 docker exec -it willmantech-db dropdb -U willman_admin willmantech_prod
 docker exec -it willmantech-db createdb -U willman_admin willmantech_prod
 
 
-# 2. Restauración del volcado binario de datos
+## 2. Restauración del volcado binario de datos
 docker exec -i willmantech-db pg_restore -U willman_admin -d willmantech_prod -v /backups/willmantech_destino.backup
