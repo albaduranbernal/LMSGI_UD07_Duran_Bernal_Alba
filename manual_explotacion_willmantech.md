@@ -3,7 +3,7 @@
 
 
 ## 1. Introducción y Arquitectura
-El sistema de gestión empresarial (ERP/CRM) de WillmanTech S.L. está diseñado bajo una arquitectura de microservicios contenerizados mediante **Docker**. Esta topología garantiza el aislamiento de dependencias, portabilidad y un escalado eficiente de los módulos integrados: Ventas, Facturación, Inventario y CRM.
+El sistema de gestión empresarial (ERP/CRM) de WillmanTech S.L. está diseñado bajo una arquitectura de microservicios contenerizados mediante Docker. Esta topología garantiza el aislamiento de dependencias, portabilidad y un escalado eficiente de los módulos integrados: Ventas, Facturación, Inventario y CRM.
 
 ### Topología Lógica del Despliegue (docker-compose.yml)
 El entorno consta de dos contenedores principales interconectados mediante una red virtual interna aislada:
