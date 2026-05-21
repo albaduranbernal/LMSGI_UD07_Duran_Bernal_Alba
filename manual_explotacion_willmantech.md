@@ -36,7 +36,7 @@ docker-compose up -d --build
 
 # 3. Verificar el correcto estado de ejecución de los contenedores
 docker-compose ps
-
+-------------------------------------------------------------------------
 ### Comando de Restauración 
 1. Limpieza y recreación de la base de datos destino
 docker exec -it willmantech-db dropdb -U willman_admin willmantech_prod
