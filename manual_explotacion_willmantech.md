@@ -19,7 +19,7 @@ Para levantar la infraestructura tecnológica desde cero en entornos de staging 
 * Docker Engine y Docker Compose 
 * SGBD Relacional: **PostgreSQL v15** (configurado con codificación UTF-8 e integridad referencial estricta).
 
-### Variables de Entorno Requeridas (`.env`)
+### Variables de Entorno Requeridas (.env)
 Antes del despliegue, configure el archivo de variables del sistema:
 
 DB_USER=willman_admin
