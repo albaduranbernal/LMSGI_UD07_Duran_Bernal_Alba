@@ -5,7 +5,7 @@
 ## 1. Introducción y Arquitectura
 El sistema de gestión empresarial (ERP/CRM) de WillmanTech S.L. está diseñado bajo una arquitectura de microservicios contenerizados mediante Docker. Esta topología garantiza el aislamiento de dependencias, portabilidad y un escalado eficiente de los módulos integrados: Ventas, Facturación, Inventario y CRM.
 
-### Topología Lógica del Despliegue (docker-compose.yml)
+### Topología Lógica del Despliegue
 El entorno consta de dos contenedores principales interconectados mediante una red virtual interna aislada:
 * **Contenedor Web/App (ERP):** Expone el core de la aplicación y gestiona las peticiones HTTP/HTTPS.
 * **Contenedor SGBD:** Almacena de manera persistente las bases de datos relacionales en un entorno aislado.
@@ -19,7 +19,7 @@ Para levantar la infraestructura tecnológica desde cero en entornos de staging 
 * Docker Engine y Docker Compose 
 * SGBD Relacional: **PostgreSQL v15** (configurado con codificación UTF-8 e integridad referencial estricta).
 
-### Variables de Entorno Requeridas (.env)
+### Variables de Entorno Requeridas 
 Antes del despliegue, configure el archivo de variables del sistema:
 
 DB_USER=willman_admin
