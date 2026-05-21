@@ -15,4 +15,8 @@ El entorno consta de dos contenedores principales interconectados mediante una r
 ## 2. Guía de Instalación y Reinstalación
 Para levantar la infraestructura tecnológica desde cero en entornos de staging o producción, ejecute el siguiente procedimiento guiado:
 
+### Requisitos y Dependencias del SGBD
+* Docker Engine y Docker Compose 
+* SGBD Relacional: **PostgreSQL v15** (configurado con codificación UTF-8 e integridad referencial estricta).
+
 
